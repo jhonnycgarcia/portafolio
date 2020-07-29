@@ -8,6 +8,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { PersonalcardComponent } from './components/personalcard/personalcard.component';
+import { KnowledgeComponent } from './components/knowledge/knowledge.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { PersonalcardComponent } from './components/personalcard/personalcard.co
     FooterComponent,
     NavComponent,
     JumbotronComponent,
-    PersonalcardComponent
+    PersonalcardComponent,
+    KnowledgeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
