@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { PersonalcardComponent } from './components/personalcard/personalcard.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     NavbarComponent,
     FooterComponent,
     NavComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    PersonalcardComponent
   ],
   imports: [
     BrowserModule,
