@@ -1,5 +1,5 @@
 img.smallCard {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 
@@ -10,7 +10,7 @@ img.smallCard {
         display: block;
         margin-right: auto;
         margin-left: auto;
-        max-width: 300px;
+        max-width: 200px;
     }
 }
 
@@ -19,7 +19,7 @@ img.smallCard {
 
 @media (min-width: 768px) {
     img.regularCard {
-        max-width: 300px;
+        max-width: 200px;
     }
 }
 

@@ -4,22 +4,14 @@
     <div class="container">
         <h1 class="display-4 ">Hello, world!</h1>
         <p class="lead ">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4 ">
+        <hr class="my-3">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 
-        <!-- Buttons >= SM -->
-        <div class="d-none d-sm-block">
-            <div class="clearfix">
-                <button type="button" class="btn btn-primary float-left">Ver más <span></span></button>
-                <button type="button" class="btn btn-secondary float-right">Contacto</button>
-            </div>
+        <div class="row row-cols-1 row-cols-sm-2 justify-content-around">
+            <button type="button" class="col-8 col-sm-3 col-md-2 btn btn-primary mb-2 mb-sm-0">Ver más <span></span></button>
+            <button type="button" class="col-8 col-sm-3 col-md-2 btn btn-secondary">Contacto</button>
         </div>
 
-        <!-- Botones <= XS -->
-        <div class="d-block d-sm-none">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Ver más</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Contacto</button>
-        </div>
     </div>
 
 </div>
