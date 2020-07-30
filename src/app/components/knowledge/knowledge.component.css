@@ -1,0 +1,30 @@
+    span.knowledgeIcon {
+        background: #494848;
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    
+    span.knowledgeIcon i {
+        color: #fff;
+        font-size: 45px;
+        display: inline-block;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+    }
+    
+    span.knowledgeIcon:hover {
+        background: #fff;
+        color: #494848;
+        border: 2px solid #494848;
+    }
+    
+    span.knowledgeIcon:hover i {
+        color: #494848;
+    }
