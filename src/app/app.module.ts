@@ -10,6 +10,7 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { PersonalcardComponent } from './components/personalcard/personalcard.component';
 import { KnowledgeComponent } from './components/knowledge/knowledge.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { GoupComponent } from './components/shared/goup/goup.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactComponent } from './components/contact/contact.component';
     JumbotronComponent,
     PersonalcardComponent,
     KnowledgeComponent,
-    ContactComponent
+    ContactComponent,
+    GoupComponent
   ],
   imports: [
     BrowserModule,

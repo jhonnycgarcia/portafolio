@@ -1,0 +1,29 @@
+#goUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: inline-block; */
+    /* display: none; */
+    background: #c65039;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#goUp i {
+    font-size: 10px;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+#goUp:hover,
+#goUp:focus,
+#goUp:active {
+    transform: scale(1.5);
+}
