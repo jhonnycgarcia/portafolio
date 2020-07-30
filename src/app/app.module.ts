@@ -11,6 +11,7 @@ import { PersonalcardComponent } from './components/personalcard/personalcard.co
 import { KnowledgeComponent } from './components/knowledge/knowledge.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GoupComponent } from './components/shared/goup/goup.component';
+import { ProyectsComponent } from './components/proyects/proyects.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { GoupComponent } from './components/shared/goup/goup.component';
     PersonalcardComponent,
     KnowledgeComponent,
     ContactComponent,
-    GoupComponent
+    GoupComponent,
+    ProyectsComponent
   ],
   imports: [
     BrowserModule,
