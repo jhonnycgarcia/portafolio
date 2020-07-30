@@ -1,0 +1,24 @@
+/* Footer top style */
+
+h5::before {
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+
+/* Social icon style */
+
+a {
+    background: #494848;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+a i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 12px;
+}
