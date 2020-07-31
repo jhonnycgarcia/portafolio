@@ -1,3 +1,46 @@
-div.proyectsImg img {
-    width: 100px;
+/* Extra Small devices @media (max-width: 575px) { */
+
+img.proyectsImg {
+    width: 227px;
+    /* height: 100px; */
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    img.proyectsImg {
+        width: 227px;
+        /* height: 100px; */
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    img.proyectsImg {
+        width: 330px;
+        /* height: 150px; */
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    img.proyectsImg {
+        width: 450px;
+        /* height: 250px; */
+    }
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    img.proyectsImg {
+        width: 500px;
+        /* height: 300px; */
+    }
 }
