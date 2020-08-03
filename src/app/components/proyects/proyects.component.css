@@ -1,135 +1,4 @@
-    .c-pImg {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background: #000;
-        overflow: hidden;
-        position: relative;
-        filter: brightness(1);
-    }
-    
-    .c-pImg img {
-        width: 300px;
-        transform: scale(1);
-        transition: all .3s;
-        /* width: 100%; */
-    }
-    
-    .c-pImg:hover img {
-        filter: brightness(0.6);
-        transform: scale(1.1);
-        z-index: -1;
-    }
-    /* Texto */
-    
-    .c-pImg .c-pText {
-        width: 100%;
-        max-width: 300px;
-        text-align: center;
-        position: absolute;
-        transition: all .3s;
-        /* transform: scale(1.5); */
-        opacity: 0;
-    }
-    
-    .c-pImg .c-pText h4,
-    .c-pImg .c-pText p {
-        color: #fff;
-        padding: auto auto;
-    }
-    
-    .c-pImg:hover .c-pText {
-        /* transform: scale(1); */
-        /* background: rgba(143, 152, 154, 0.7); */
-        opacity: 1;
-    }
-    /* Lineas */
-    
-    .c-pImg::before,
-    .c-pImg::after {
-        content: "";
-        position: absolute;
-        width: calc(100% - 30px);
-        height: 4px;
-        background: #c65039;
-        transition: all .3s;
-    }
-    
-    .c-pImg::before {
-        left: -100%;
-        top: 3px;
-    }
-    
-    .c-pImg::after {
-        left: 100%;
-        bottom: 3px;
-    }
-    /* Lineas Hover */
-    
-    .c-pImg:hover::before,
-    .c-pImg:hover::after {
-        left: 15px;
-        /* opacity: 1; */
-    }
-    /* --------------- TEST ------------------ */
-    
-    .proyectContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background: #000;
-    }
-    
-    .proyectContainer img {
-        position: relative;
-        width: 100%;
-        max-width: 300px;
-        cursor: pointer;
-        transition: all 500ms ease-out;
-        filter: brightness(1);
-    }
-    
-    .proyectContainer div.proyectText {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        max-width: 300px;
-        /* margin: 0 auto; */
-        /* height: 100%; */
-        opacity: 0;
-        transition: all 500ms ease-out;
-        visibility: hidden;
-    }
-    
-    .proyectContainer div.proyectText>h4,
-    .proyectContainer div.proyectText>p {
-        /* transform: scale(1.5); */
-        transition: all .3s ease;
-        padding: 10px auto;
-        color: #fff;
-    }
-    
-    .proyectContainer:hover>div.proyectText {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .proyectContainer:hover>img {
-        filter: brightness(0.6);
-    }
-    
-    .proyectContainer:hover div.proyectText>h4,
-    .proyectContainer:hover div.proyectText>p {
-        /* transform: scale(1); */
-    }
-    /* -------------------- Test Two ------------------------ */
-    
-    .test-two {
+    .proyect-section {
         width: 100%;
         /* height: 100%; */
         /* background: #000; */
@@ -141,104 +10,7 @@
         /* position: relative; */
     }
     
-    .test-two>img.test-two-img {
-        width: 100%;
-        max-width: 300px;
-        position: relative;
-        transition: all 500ms ease-out;
-        filter: brightness(1);
-    }
-    
-    .test-two>div.test-two-text {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        max-width: 300px;
-        /* height: 100%; */
-        transition: all 500ms ease-out;
-        /* transition: all 500ms ease-out; */
-        /* transform: scale(1.5); */
-        opacity: 0;
-    }
-    
-    .test-two>div.test-two-text>h4,
-    .test-two>div.test-two-text>p {
-        color: #fff;
-        padding: 10px auto;
-    }
-    
-    .test-two:hover>div.test-two-text {
-        opacity: 1;
-        /* transform: scale(1); */
-    }
-    
-    .test-two:hover>img.test-two-img {
-        filter: brightness(0.6);
-    }
-    
-    .test-two:hover {
-        background: rgba(143, 152, 154, 0.7);
-    }
-    /* -------------------------------- Test Three -------------------------------------- */
-    
-    .test3 {
-        background: #000;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-    
-    .test3>img.test3Image {
-        width: 100%;
-        max-width: 300px;
-        position: relative;
-        transition: all 500ms ease-out;
-        filter: brightness(1);
-        transform: scale(1);
-    }
-    
-    .test3>div.test3Body {
-        width: 90%;
-        max-width: 300px;
-        position: absolute;
-        text-align: center;
-        color: #fff;
-        transition: all 500ms ease-out;
-        padding: 10px 10px;
-        transform: scale(1.1);
-        opacity: 0;
-    }
-    
-    .test3:hover>div.test3Body,
-    .test3:focus>div.test3Body,
-    .test3:active>div.test3Body {
-        opacity: 1;
-        transform: scale(1);
-    }
-    
-    .test3:hover>img.test3Image,
-    .test3:focus>img.test3Image,
-    .test3:active>img.test3Image {
-        filter: brightness(0.6);
-        transform: scale(1.1);
-    }
-    /* -------------------------- Test Four ------------------ */
-    
-    .test-four {
-        width: 100%;
-        /* height: 100%; */
-        /* background: #000; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        transition: all 500ms ease-out;
-        /* position: relative; */
-    }
-    
-    .test-four::before {
+    .proyect-section::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -251,13 +23,13 @@
         -webkit-transition: all 1s;
     }
     
-    .test-four:hover::before {
+    .proyect-section:hover::before {
         opacity: 1;
         transition: all 500ms ease-out;
         /* z-index: 1; */
     }
     
-    .test-four>img.test-four-img {
+    .proyect-section>img.proyect-section-img {
         width: 100%;
         max-width: 300px;
         position: relative;
@@ -266,11 +38,11 @@
         transform: scale(1);
     }
     
-    .test-four:hover>img.test-four-img {
+    .proyect-section:hover>img.proyect-section-img {
         transform: scale(1.1);
     }
     
-    .test-four>div.test-four-text {
+    .proyect-section>div.proyect-section-text {
         position: absolute;
         text-align: center;
         width: 100%;
@@ -282,91 +54,13 @@
         opacity: 0;
     }
     
-    .test-four>div.test-four-text>h4,
-    .test-four>div.test-four-text>p {
+    .proyect-section>div.proyect-section-text>h4,
+    .proyect-section>div.proyect-section-text>p {
         color: #fff;
         padding: 10px auto;
     }
     
-    .test-four:hover>div.test-four-text {
+    .proyect-section:hover>div.proyect-section-text {
         opacity: 1;
         transform: scale(1);
     }
-    /* -------------------- Test Five ------------------------- */
-    
-    .test-five {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background: #000;
-        overflow: hidden;
-        position: relative;
-        filter: brightness(1);
-    }
-    
-    .test-five>img.test-five-image {
-        width: 300px;
-        transform: scale(1);
-        transition: all .3s;
-        /* width: 100%; */
-    }
-    
-    .test-five:hover>img.test-five-image {
-        filter: brightness(0.6);
-        transform: scale(1.1);
-        z-index: -1;
-    }
-    /* Texto */
-    
-    .test-five>div.test-five-body {
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-        position: absolute;
-        transition: all .3s;
-        /* transform: scale(1.5); */
-        opacity: 0;
-    }
-    
-    .test-five>div.test-five-body h4,
-    .test-five>div.test-five-body p {
-        color: #fff;
-        padding: auto auto;
-    }
-    
-    .test-five:hover>div.test-five-body {
-        /* transform: scale(1); */
-        /* background: rgba(143, 152, 154, 0.7); */
-        opacity: 1;
-    }
-    /* Lineas */
-    
-    .test-five::before,
-    .test-five::after {
-        content: "";
-        position: absolute;
-        width: calc(100% - 30px);
-        height: 4px;
-        background: #c65039;
-        transition: all .3s;
-    }
-    
-    .test-five::before {
-        left: -100%;
-        top: 3px;
-    }
-    
-    .test-five::after {
-        left: 100%;
-        bottom: 3px;
-    }
-    /* Lineas Hover */
-    
-    .test-five:hover::before,
-    .test-five:hover::after {
-        left: 15px;
-        /* opacity: 1; */
-    }
-    /* -------------------- Responsive ---------------------- */
