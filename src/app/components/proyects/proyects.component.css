@@ -46,18 +46,21 @@
         position: absolute;
         text-align: center;
         width: 100%;
+        max-width: 100%;
         /* max-width: 300px; */
         /* height: 100%; */
         transition: all 500ms ease-out;
         /* transition: all 500ms ease-out; */
-        transform: scale(1.1);
+        transform: scale(0.9);
         opacity: 0;
     }
     
     .proyect-section>div.proyect-section-text>h4,
     .proyect-section>div.proyect-section-text>p {
+        width: 100%;
+        max-width: 100%;
         color: #fff;
-        padding: 10px auto;
+        padding: 5px 10px;
     }
     
     .proyect-section:hover>div.proyect-section-text {
