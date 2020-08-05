@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalcardComponent implements OnInit {
 
+  summary = 'lorem';
   constructor() { }
 
   ngOnInit(): void {
