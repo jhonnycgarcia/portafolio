@@ -1,3 +1,16 @@
+    .skillContainer {
+        background: #fff;
+        margin: 0;
+        padding: 10px 10px;
+        transition: all 500ms ease-out;
+    }
+    
+    .skillContainer:hover,
+    .skillContainer:active,
+    .skillContainer:focus {
+        background: rgba(212, 212, 212, 0.376);
+    }
+    
     span.knowledgeIcon {
         background: #494848;
         width: 90px;
@@ -7,24 +20,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
+        transition: all 500ms ease-out;
     }
     
     span.knowledgeIcon i {
         color: #fff;
         font-size: 45px;
         display: inline-block;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
+        transition: all 500ms ease-out;
     }
     
-    span.knowledgeIcon:hover {
+    .skillContainer:hover>span.knowledgeIcon {
         background: #fff;
         color: #494848;
         border: 2px solid #494848;
     }
     
-    span.knowledgeIcon:hover i {
+    .skillContainer:hover>span.knowledgeIcon i {
         color: #494848;
     }
