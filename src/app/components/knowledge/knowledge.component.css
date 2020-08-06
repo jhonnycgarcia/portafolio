@@ -39,3 +39,19 @@
     .skillContainer:hover>span.knowledgeIcon i {
         color: #494848;
     }
+    /* // Small devices and Up (landscape phones, 576px and up) */
+    
+    @media (min-width: 576px) {
+        .skillContainer:first-child {
+            border-radius: 10px 0 0 0;
+        }
+        .skillContainer:nth-child(2) {
+            border-radius: 0 10px 0 0;
+        }
+        .skillContainer:nth-child(3) {
+            border-radius: 0 0 0 10px;
+        }
+        .skillContainer:last-child {
+            border-radius: 0 0 10px 0;
+        }
+    }
