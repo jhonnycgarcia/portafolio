@@ -2,3 +2,34 @@
     position: relative;
     top: -3em;
 }
+
+#startSection {
+    background-image: url(https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596683234/webDeveloperImage1Compress_d4p4os.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+#startSection::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#startSection>.container {
+    position: relative;
+}
+
+.subTitle {
+    color: rgb(227, 234, 241) !important;
+    ;
+}
+
+.container>hr {
+    background: #fff;
+}
