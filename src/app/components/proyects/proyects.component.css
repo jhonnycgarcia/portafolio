@@ -72,27 +72,13 @@
         }
         /* //Botones dentro del hover de las imagenes */
         
-        a.proyect-section-link {
+        .proyect-section-link {
             background: #c65039;
-            /* background: #494848; */
-            width: 30px;
-            height: 30px;
-            display: inline-block;
-            border-radius: 50%;
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+            padding: 7px 10px;
+            transition: all 0.3s ease-out;
         }
         
-        a.proyect-section-link:hover {
+        .proyect-section-link:hover {
             background: #fff;
-        }
-        
-        a.proyect-section-link>i {
-            font-size: 10px;
-            color: #fff;
-            padding: 10px 10px;
-        }
-        
-        a.proyect-section-link:hover>i {
-            color: #494848;
+            color: #c65039;
         }
