@@ -40,3 +40,42 @@ a.btn {
     -moz-box-shadow: 10px 10px 28px 20px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 20px rgba(0, 0, 0, 0.75);
 }
+
+
+/* TEST -------------- */
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .jumbotron {
+        padding: 5.5rem 2rem;
+    }
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .jumbotron {
+        padding: 5.5rem 2rem;
+    }
+}
