@@ -39,10 +39,15 @@ a.btn {
     -webkit-box-shadow: 10px 10px 28px 20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 28px 20px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 28px 20px rgba(0, 0, 0, 0.75);
+    transition: all 100ms ease-in;
+    background: #c65039;
+    border-color: #c65039;
 }
 
-
-/* TEST -------------- */
+a.btn:hover {
+    background: #a5432f;
+    border-color: #a5432f;
+}
 
 
 /* // Small devices (landscape phones, 576px and up) */
