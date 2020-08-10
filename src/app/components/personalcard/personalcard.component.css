@@ -1,27 +1,17 @@
 img.smallCard {
     max-width: 200px;
+    padding-bottom: 0.5rem;
 }
 
 
 /* // Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) {
-    img.regularCard {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 200px;
-    }
-}
+@media (min-width: 576px) {}
 
 
 /* // Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
-    img.regularCard {
-        max-width: 200px;
-    }
-}
+@media (min-width: 768px) {}
 
 
 /* // Large devices (desktops, 992px and up) */
