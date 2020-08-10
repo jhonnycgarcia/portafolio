@@ -1,31 +1,14 @@
 <div class="container" id="moreSection">
-
-    <!-- Card <= XS -->
-    <div class="row row-cols-1 justify-content-center mb-3">
-        <div class="col-10">
-            <div class="card border-light d-block d-sm-none">
-                <img src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1589701505/mubjffnzmvyuwptluzcq.png" class="card-img-top rounded mx-auto d-block smallCard" alt="personalImage">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">{{summary}}</p>
-                </div>
-            </div>
+    <!-- Test -->
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 align-items-center py-2">
+        <div class="col col-md-4 col-lg-4">
+            <img src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1589701505/mubjffnzmvyuwptluzcq.png" class="card-img-top rounded mx-auto d-block smallCard" alt="personalImage">
+            <p class="text-center mt-2 d-none d-md-block">{{personalData.fullName}}<br><small class="text-muted">{{personalData.academicLevel}}</small></p>
         </div>
-    </div>
-
-    <!-- Card >= SM -->
-    <div class="card border-light mb-3 d-none d-sm-block">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1589701505/mubjffnzmvyuwptluzcq.png" class="card-img rounded regularCard" alt="personalImage">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">{{summary}}</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
+        <div class="col col-md-8 col-lg-8">
+            <h5 class="text-center my-3">{{cardTitle}}</h5>
+            <p class="text-justify px-5 px-sm-3 px-md-0" *ngFor="let summary of personalData.summaryRows" [innerHTML]="summary"></p>
+            <p class="px-5 px-sm-3 mt-2 d-none d-sm-block d-md-none">{{personalData.fullName}} - <small class="text-muted">{{personalData.academicLevel}}</small></p>
         </div>
     </div>
 
