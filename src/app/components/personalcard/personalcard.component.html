@@ -8,7 +8,7 @@
         <div class="col col-md-8 col-lg-8">
             <h5 class="text-center my-3">{{cardTitle}}</h5>
             <p class="text-justify px-5 px-sm-3 px-md-0" *ngFor="let summary of personalData.summaryRows" [innerHTML]="summary"></p>
-            <p class="px-5 px-sm-3 mt-2 d-none d-sm-block d-md-none">{{personalData.fullName}} - <small class="text-muted">{{personalData.academicLevel}}</small></p>
+            <p class="px-5 px-sm-3 mt-2 d-block d-md-none">{{personalData.fullName}} - <small class="text-muted">{{personalData.academicLevel}}</small></p>
         </div>
     </div>
 
