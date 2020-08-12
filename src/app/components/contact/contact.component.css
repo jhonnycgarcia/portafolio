@@ -1,18 +1,12 @@
 /* Footer top style */
 
-h5::before {
-    content: '|';
-    color: #c65039;
-    padding-right: 10px;
-}
-
 
 /* Social icon style */
 
 a.social-icons {
     background: #494848;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     border-radius: 50%;
     -webkit-transition-duration: 0.3s;
@@ -23,15 +17,12 @@ a.social-icons:hover,
 a.social-icons:focus,
 a.social-icons:active {
     background: #fff;
-    /* -webkit-transform: scale(1.5); */
-    /* transform: scale(1.5); */
-    /* margin: 0px 10px; */
 }
 
 a.social-icons i {
-    font-size: 10px;
+    font-size: 20px;
     color: #fff;
-    padding: 10px 10px;
+    padding: 11px 11px;
 }
 
 a.social-icons i:hover {
@@ -41,7 +32,6 @@ a.social-icons i:hover {
 a.email-contact {
     color: #c65039;
     transition: all .3s ease;
-    /* text-decoration: none; */
 }
 
 a.email-contact:hover {
