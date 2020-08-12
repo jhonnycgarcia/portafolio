@@ -9,7 +9,7 @@ h5::before {
 
 /* Social icon style */
 
-a {
+a.social-icons {
     background: #494848;
     width: 30px;
     height: 30px;
@@ -19,21 +19,31 @@ a {
     transition-duration: 0.3s;
 }
 
-a:hover,
-a:focus,
-a:active {
+a.social-icons:hover,
+a.social-icons:focus,
+a.social-icons:active {
     background: #fff;
     /* -webkit-transform: scale(1.5); */
     /* transform: scale(1.5); */
     /* margin: 0px 10px; */
 }
 
-a i {
+a.social-icons i {
     font-size: 10px;
     color: #fff;
     padding: 10px 10px;
 }
 
-a i:hover {
+a.social-icons i:hover {
     color: #494848;
+}
+
+a.email-contact {
+    color: #c65039;
+    transition: all .3s ease;
+    /* text-decoration: none; */
+}
+
+a.email-contact:hover {
+    color: #fff;
 }
