@@ -12,6 +12,7 @@ import { KnowledgeComponent } from './components/knowledge/knowledge.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { GoupComponent } from './components/shared/goup/goup.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
+import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
     KnowledgeComponent,
     ContactComponent,
     GoupComponent,
-    ProyectsComponent
+    ProyectsComponent,
+    ProyectCardComponent
   ],
   imports: [
     BrowserModule,

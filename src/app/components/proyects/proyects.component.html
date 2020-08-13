@@ -3,78 +3,8 @@
         <h3 class="text-center my-4">Portafolio de proyectos</h3>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-            <div class="col mb-1 mb-sm-1">
-                <div class="proyect-section">
-                    <img class="proyect-section-img" src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153386/coffeeCupPurpleCompress_wbndmq.png" alt="">
-                    <div class="proyect-section-text">
-                        <h4>Title 1</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quam.</p>
-                        <div class="text-center align-self-center">
-                            <a href="#" class="badge badge-pill badge-primary proyect-section-link">Detalles &nbsp;<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-1 mb-sm-1">
-                <div class="proyect-section">
-                    <img class="proyect-section-img" src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153386/coffeeCupOrangeCompress_du2vty.png" alt="">
-                    <div class="proyect-section-text">
-                        <h4>Title 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quam.</p>
-                        <div class="text-center align-self-center">
-                            <a href="#" class="badge badge-pill badge-primary proyect-section-link">Detalles &nbsp;<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-1 mb-sm-1">
-                <div class="proyect-section">
-                    <img class="proyect-section-img" src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153385/coffeeCupRedCompress_b664sd.png" alt="">
-                    <div class="proyect-section-text">
-                        <h4>Title 3</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quam.</p>
-                        <div class="text-center align-self-center">
-                            <a href="#" class="badge badge-pill badge-primary proyect-section-link">Detalles &nbsp;<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col mb-1 mb-sm-1">
-                <div class="proyect-section">
-                    <img class="proyect-section-img" src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153385/coffeeCupCyanCompress_z7nriv.png" alt="">
-                    <div class="proyect-section-text">
-                        <h4>Title 4</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quam.</p>
-                        <div class="text-center align-self-center">
-                            <a href="#" class="badge badge-pill badge-primary proyect-section-link">Detalles &nbsp;<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-1 mb-sm-1 d-none d-md-block">
-                <div class="proyect-section">
-                    <img class="proyect-section-img" src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153385/coffeeCupCyanCompress_z7nriv.png" alt="">
-                    <div class="proyect-section-text">
-                        <h4>Title 4</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quam.</p>
-                        <div class="text-center align-self-center">
-                            <a href="#" class="badge badge-pill badge-primary proyect-section-link">Detalles &nbsp;<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-1 mb-sm-1 d-none d-md-block">
-                <div class="proyect-section">
-                    <img class="proyect-section-img" src="https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153385/coffeeCupCyanCompress_z7nriv.png" alt="">
-                    <div class="proyect-section-text">
-                        <h4>Title 4</h4>
-                        <p class="d-sm-none d-md-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, quam.</p>
-                        <div class="text-center align-self-center">
-                            <a href="#" class="badge badge-pill badge-primary proyect-section-link">Detalles &nbsp;<i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col mb-1 mb-sm-1" *ngFor="let proyect of proyects; let i = index">
+                <app-proyect-card [id]="i" [proyect]="proyect"></app-proyect-card>
             </div>
 
         </div>
