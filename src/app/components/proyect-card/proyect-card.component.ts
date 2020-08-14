@@ -8,12 +8,11 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 export class ProyectCardComponent implements OnInit {
 
   @Input() proyect: Proyect; // Item inyectado
-  @Input() id: string;
+  @Input() index: number;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
 
