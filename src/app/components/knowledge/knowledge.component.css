@@ -1,57 +1,117 @@
-    .skillContainer {
-        background: #fff;
-        margin: 0;
-        padding: 15px 20px;
-        transition: all 500ms ease-out;
+.skillContainer {
+    background: #fff;
+    margin: 0;
+    padding: 15px 20px;
+    transition: all 500ms ease-out;
+}
+
+.skillContainer:hover,
+.skillContainer:active,
+.skillContainer:focus {
+    background: rgba(212, 212, 212, 0.376);
+}
+
+span.knowledgeIcon {
+    background: #494848;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-out;
+}
+
+span.knowledgeIcon i {
+    color: #fff;
+    font-size: 45px;
+    display: inline-block;
+    transition: all 500ms ease-out;
+}
+
+.skillContainer:hover>span.knowledgeIcon {
+    background: #fff;
+    color: #494848;
+    border: 2px solid #494848;
+}
+
+.skillContainer:hover>span.knowledgeIcon i {
+    color: #494848;
+}
+
+
+/* // Small devices and Up (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .skillContainer:first-child {
+        border-radius: 10px 0 0 0;
     }
-    
-    .skillContainer:hover,
-    .skillContainer:active,
-    .skillContainer:focus {
-        background: rgba(212, 212, 212, 0.376);
+    .skillContainer:nth-child(2) {
+        border-radius: 0 10px 0 0;
     }
-    
-    span.knowledgeIcon {
-        background: #494848;
-        width: 90px;
-        height: 90px;
-        display: inline-block;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: all 500ms ease-out;
+    .skillContainer:nth-child(3) {
+        border-radius: 0 0 0 10px;
     }
-    
-    span.knowledgeIcon i {
-        color: #fff;
-        font-size: 45px;
-        display: inline-block;
-        transition: all 500ms ease-out;
+    .skillContainer:last-child {
+        border-radius: 0 0 10px 0;
     }
-    
-    .skillContainer:hover>span.knowledgeIcon {
-        background: #fff;
-        color: #494848;
-        border: 2px solid #494848;
-    }
-    
-    .skillContainer:hover>span.knowledgeIcon i {
-        color: #494848;
-    }
-    /* // Small devices and Up (landscape phones, 576px and up) */
-    
-    @media (min-width: 576px) {
-        .skillContainer:first-child {
-            border-radius: 10px 0 0 0;
-        }
-        .skillContainer:nth-child(2) {
-            border-radius: 0 10px 0 0;
-        }
-        .skillContainer:nth-child(3) {
-            border-radius: 0 0 0 10px;
-        }
-        .skillContainer:last-child {
-            border-radius: 0 0 10px 0;
-        }
-    }
+}
+
+
+/* TEST */
+
+.test {
+    padding: 7rem 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.test::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.test-description {
+    color: #fff !important;
+    margin-bottom: 0 !important;
+    font-weight: bold;
+    transition: all 500ms ease-out;
+    transform: scale(1);
+}
+
+.test:hover .test-description {
+    transform: scale(1.1);
+}
+
+span.test-icon {
+    background: #494848;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #c65039;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-out;
+}
+
+.test:hover span.test-icon {
+    background: #c65039;
+}
+
+span.test-icon i {
+    color: #fff;
+    font-size: 45px;
+    display: inline-block;
+    transition: all 500ms ease-out;
+}

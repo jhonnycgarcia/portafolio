@@ -1,5 +1,5 @@
 <section class="py-3" id="knowledgeSection">
-    <div class="container">
+    <!-- <div class="container">
         <h3 class="text-center my-4">Conocimientos</h3>
         <div class="row row-cols-1 row-cols-sm-2">
             <div class="col skillContainer">
@@ -23,5 +23,24 @@
                 <p class="text-justify px-5 px-sm-3 px-md-0">Elaborar modelos y diagramas implementando el lenguaje unificado de modelado <i class="text-muted">(UML)</i> para para visualizar, especificar, construir y documentar sistemas.</p>
             </div>
         </div>
+    </div> -->
+
+    <!-- TEST -->
+    <div class="container">
+        <h3 class="text-center my-4">Experiencia</h3>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 align-items-center test" *ngFor="let skill of skills;let index = index" [ngClass]="{'flex-row-reverse': ((index%2)==1),'':((index%2)==0)}" [ngStyle]="{'background-image': 'url('+skill.coverImage+')'}">
+
+            <div class="col">
+                <!-- <div class="col" *ngIf=" (index % 2 == 0)"> -->
+                <span class="test-icon mx-auto"><i [class]="skill.fontAwesomeIcon"></i></span>
+                <h4 class="text-center text-white py-3">{{skill.title}}</h4>
+            </div>
+            <div class="col">
+                <!-- <div class="col" *ngIf=" (index % 2 == 0)"> -->
+                <p class="text-justify test-description px-5 px-sm-5 px-md-3 px-lg-5" [innerHTML]="skill.description"></p>
+            </div>
+
+        </div>
     </div>
+
 </section>
