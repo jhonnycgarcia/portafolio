@@ -52,3 +52,11 @@ h6 {
 .fadeIn {
     animation-name: fadeIn;
 }
+
+.text-muted-1 {
+    color: #c65039 !important;
+}
+
+.text-muted-2 {
+    color: #2d1eb4 !important;
+}
