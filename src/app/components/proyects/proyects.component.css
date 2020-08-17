@@ -1,9 +1,12 @@
 a.proyect-section-button {
+    color: #fff;
     background: #c65039;
     border-color: #c65039;
 }
 
-a.proyect-section-button:hover {
+a.proyect-section-button:hover,
+a.proyect-section-button:active,
+a.proyect-section-button:focus {
     background: #a5432f;
     border-color: #a5432f;
 }
