@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
+import {Proyect} from '../proyects/proyects-data';
 
 @Component({
   selector: 'app-proyect-card',
@@ -14,11 +15,4 @@ export class ProyectCardComponent implements OnInit {
 
   ngOnInit(): void {}
 
-}
-
-export interface Proyect{
-  id?: string; // Id
-  title: string;
-  coverImage: string;
-  description: string;
 }
