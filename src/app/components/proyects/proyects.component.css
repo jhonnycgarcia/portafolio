@@ -10,3 +10,7 @@ a.proyect-section-button:focus {
     background: #a5432f;
     border-color: #a5432f;
 }
+
+#card-proyect {
+    padding: 0 !important;
+}

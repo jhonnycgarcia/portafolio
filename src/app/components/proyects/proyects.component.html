@@ -3,7 +3,7 @@
         <h3 class="text-center my-4">Portafolio de proyectos</h3>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-            <div class="col mb-1 mb-sm-1" *ngFor="let proyect of proyects; let i = index">
+            <div class="col mb-2 mb-sm-2" *ngFor="let proyect of proyects; let i = index" id="card-proyect">
                 <app-proyect-card [index]="i" [proyect]="proyect"></app-proyect-card>
             </div>
 
