@@ -11,7 +11,7 @@ const data = [
     {
         id: '1',
         title: 'Proyecto II',
-        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153386/coffeeCupOrangeCompress_du2vty.png',
+        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706545/projectDEM400pxCompress_c5gc2n.png',
         slug: '',
         summary: 'Gestión y Evaluación de un Sistema de control de Asistencias',
         description: ''
@@ -19,15 +19,15 @@ const data = [
     {
         id: '2',
         title: 'Proyecto I',
-        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153385/coffeeCupRedCompress_b664sd.png',
+        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706556/projectCGP400pxCompress_ilvehs.png',
         slug: '',
-        summary: 'Gestión y Evaluación de un Sistema de control de Asistencias',
+        summary: 'Optimización del Sistema para el Control y Registro de Asistencia',
         description: ''
     },
     {
         id: '3',
         title: 'SIGEI',
-        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153385/coffeeCupGreenCompress_gz5dvl.png',
+        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706556/projectCGP400pxCompress_ilvehs.png',
         slug: '',
         summary: 'Sistema Gestor de Inasistencias',
         description: ''
@@ -35,7 +35,7 @@ const data = [
     {
         id: '4',
         title: 'SIDEIN',
-        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153384/coffeeCupBlueCompress_ound0n.png',
+        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706556/projectCGP400pxCompress_ilvehs.png',
         slug: '',
         summary: 'Sistema para Detección de Inconsistencias',
         description: ''
