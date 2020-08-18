@@ -21,6 +21,7 @@
     "@angular/router": "~10.0.5",
     "angular-cli-ghpages": "^0.6.2",
     "rxjs": "~6.5.5",
+    "scroll-out": "^2.2.11",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
