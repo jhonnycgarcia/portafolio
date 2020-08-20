@@ -1,67 +1,8 @@
-.skillContainer {
-    background: #fff;
-    margin: 0;
-    padding: 15px 20px;
-    transition: all 500ms ease-out;
+#knowledgeSection>.container {
+    overflow: hidden;
 }
 
-.skillContainer:hover,
-.skillContainer:active,
-.skillContainer:focus {
-    background: rgba(212, 212, 212, 0.376);
-}
-
-span.knowledgeIcon {
-    background: #494848;
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 500ms ease-out;
-}
-
-span.knowledgeIcon i {
-    color: #fff;
-    font-size: 45px;
-    display: inline-block;
-    transition: all 500ms ease-out;
-}
-
-.skillContainer:hover>span.knowledgeIcon {
-    background: #fff;
-    color: #494848;
-    border: 2px solid #494848;
-}
-
-.skillContainer:hover>span.knowledgeIcon i {
-    color: #494848;
-}
-
-
-/* // Small devices and Up (landscape phones, 576px and up) */
-
-@media (min-width: 576px) {
-    .skillContainer:first-child {
-        border-radius: 10px 0 0 0;
-    }
-    .skillContainer:nth-child(2) {
-        border-radius: 0 10px 0 0;
-    }
-    .skillContainer:nth-child(3) {
-        border-radius: 0 0 0 10px;
-    }
-    .skillContainer:last-child {
-        border-radius: 0 0 10px 0;
-    }
-}
-
-
-/* TEST */
-
-.test {
+.skill {
     padding: 7rem 0;
     background-repeat: no-repeat;
     background-position: center center;
@@ -70,7 +11,7 @@ span.knowledgeIcon i {
     margin-bottom: .5rem;
 }
 
-.test::before {
+.skill::before {
     content: '';
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
@@ -80,7 +21,7 @@ span.knowledgeIcon i {
     right: 0;
 }
 
-.test-description {
+.skill-description {
     color: #fff !important;
     margin-bottom: 0 !important;
     font-weight: bold;
@@ -88,11 +29,11 @@ span.knowledgeIcon i {
     transform: scale(1);
 }
 
-.test:hover .test-description {
+.skill:hover .skill-description {
     transform: scale(1.1);
 }
 
-span.test-icon {
+span.skill-icon {
     background: #494848;
     width: 90px;
     height: 90px;
@@ -105,13 +46,33 @@ span.test-icon {
     transition: all 500ms ease-out;
 }
 
-.test:hover span.test-icon {
+.skill:hover span.skill-icon {
     background: #c65039;
 }
 
-span.test-icon i {
+span.skill-icon i {
     color: #fff;
     font-size: 45px;
     display: inline-block;
     transition: all 500ms ease-out;
+}
+
+.skill[data-scroll="in"]:nth-child(odd) {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.skill[data-scroll="out"]:nth-child(odd) {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.skill[data-scroll="in"]:nth-child(even) {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.skill[data-scroll="out"]:nth-child(even) {
+    opacity: 0;
+    transform: translateX(200px);
 }

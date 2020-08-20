@@ -1,46 +1,14 @@
 <section class="py-3" id="knowledgeSection">
-    <!-- <div class="container">
-        <h3 class="text-center my-4">Conocimientos</h3>
-        <div class="row row-cols-1 row-cols-sm-2">
-            <div class="col skillContainer">
-                <span class="knowledgeIcon mx-auto"><i class="fas fa-laptop-code"></i></span>
-                <h6 class="text-center pt-2">Desarrollo Web</h6>
-                <p class="text-justify px-5 px-sm-3 px-md-0">Conocimientos basados en el desarrollo de aplicaciones web <i class="text-muted">(HTML – CSS- JAVASCRIPT – PHP)</i>, tanto Front-End como Back-End.</p>
-            </div>
-            <div class="col skillContainer">
-                <span class="knowledgeIcon mx-auto"><i class="fas fa-database"></i></span>
-                <h6 class="text-center pt-2">Administración de Base de Datos</h6>
-                <p class="text-justify px-5 px-sm-3 px-md-0">Manejo y administración de bases de datos relacionales <i class="text-muted">(Sql)</i> como no relacionales <i class="text-muted">(NoSql)</i> pudiendo destacar entre ellas <i class="text-muted">PostgreSQL, MySQL</i> y <i class="text-muted">MongoDB</i>.</p>
-            </div>
-            <div class="col skillContainer">
-                <span class="knowledgeIcon mx-auto"><i class="fas fa-book"></i></span>
-                <h6 class="text-center pt-2">Gestión de Proyectos</h6>
-                <p class="text-justify px-5 px-sm-3 px-md-0">Documentar proyectos haciendo uso de las buenas prácticas para la gestión, administración y dirección de proyectos <i class="text-muted">(PMBOK)</i>.</p>
-            </div>
-            <div class="col skillContainer">
-                <span class="knowledgeIcon mx-auto"><i class="far fa-object-group"></i></span>
-                <h6 class="text-center pt-2">Maquetación</h6>
-                <p class="text-justify px-5 px-sm-3 px-md-0">Elaborar modelos y diagramas implementando el lenguaje unificado de modelado <i class="text-muted">(UML)</i> para para visualizar, especificar, construir y documentar sistemas.</p>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- TEST -->
     <div class="container">
         <h3 class="text-center my-4">Experiencia</h3>
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 align-items-center test" *ngFor="let skill of skills;let index = index" [ngClass]="{'flex-row-reverse': ((index%2)==1),'':((index%2)==0)}" [ngStyle]="{'background-image': 'url('+skill.coverImage+')'}">
-
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 align-items-center skill" *ngFor="let skill of skills;let index = index" [ngClass]="{'flex-row-reverse': ((index%2)==1),'':((index%2)==0)}" [ngStyle]="{'background-image': 'url('+skill.coverImage+')'}">
             <div class="col">
-                <!-- <div class="col" *ngIf=" (index % 2 == 0)"> -->
-                <span class="test-icon mx-auto"><i [class]="skill.fontAwesomeIcon"></i></span>
+                <span class="skill-icon mx-auto"><i [class]="skill.fontAwesomeIcon"></i></span>
                 <h4 class="text-center text-white py-3">{{skill.title}}</h4>
             </div>
             <div class="col">
-                <!-- <div class="col" *ngIf=" (index % 2 == 0)"> -->
-                <p class="text-justify test-description px-5 px-sm-5 px-md-3 px-lg-5" [innerHTML]="skill.description"></p>
+                <p class="text-justify skill-description px-5 px-sm-5 px-md-3 px-lg-5" [innerHTML]="skill.description"></p>
             </div>
-
         </div>
     </div>
-
 </section>
