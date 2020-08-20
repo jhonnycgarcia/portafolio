@@ -1,4 +1,4 @@
-import { Component, AfterContentInit, OnDestroy, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import ScrollOut from 'scroll-out';
 
 @Component({
@@ -6,14 +6,14 @@ import ScrollOut from 'scroll-out';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterContentInit, OnDestroy {
+export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'portafolio';
   so: any;
 
-  constructor(private el: ElementRef){}
+  constructor(){}
 
-  ngAfterContentInit(): void{
-    this.so = ScrollOut({});
+  ngAfterViewInit(): void{
+    this.so = ScrollOut();
   }
 
   ngOnDestroy(): void{
