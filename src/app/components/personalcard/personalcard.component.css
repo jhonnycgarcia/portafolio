@@ -1,3 +1,7 @@
+#moreSection {
+    overflow: hidden;
+}
+
 img.smallCard {
     max-width: 200px;
     /* padding-bottom: 0.5rem; */
