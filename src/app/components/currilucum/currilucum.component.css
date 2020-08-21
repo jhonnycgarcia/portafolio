@@ -1,0 +1,32 @@
+#curriculum {
+    background: #323232;
+}
+
+p.info {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+h4.curriculum-text-company>a {
+    text-decoration: none;
+    color: #c65039;
+}
+
+h4.curriculum-text-company:hover>a {
+    color: #d46f5b;
+}
+
+h5>small.text-muted {
+    color: #84919c!important;
+}
+
+h5::before {
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+span.badge {
+    margin: 0 2px;
+}

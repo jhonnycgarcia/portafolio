@@ -14,6 +14,7 @@ import { GoupComponent } from './components/shared/goup/goup.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
 import { OldJobsComponent } from './components/old-jobs/old-jobs.component';
+import { CurrilucumComponent } from './components/currilucum/currilucum.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { OldJobsComponent } from './components/old-jobs/old-jobs.component';
     GoupComponent,
     ProyectsComponent,
     ProyectCardComponent,
-    OldJobsComponent
+    OldJobsComponent,
+    CurrilucumComponent
   ],
   imports: [
     BrowserModule,
