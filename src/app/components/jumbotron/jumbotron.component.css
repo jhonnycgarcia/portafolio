@@ -9,6 +9,9 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.41);
 }
 
 #startSection::before {
@@ -54,6 +57,54 @@ a.btn:active,
 a.btn:focus {
     background: #a5432f !important;
     /* border-color: #a5432f !important; */
+}
+
+
+/* Animation for Scroll Down */
+
+.do-scroll-down {
+    color: #fff;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.do-scroll-down>i.chevron-1 {
+    opacity: 0;
+}
+
+#startSection[data-scroll="in"] i.chevron-1 {
+    animation-name: slideInDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+@-webkit-keyframes slideInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 110% 0);
+        transform: translate3d(0, 110% 0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -50%, 0);
+        transform: translate3d(0, -50%, 0);
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 110% 0);
+        transform: translate3d(0, 110%, 0);
+    }
 }
 
 
