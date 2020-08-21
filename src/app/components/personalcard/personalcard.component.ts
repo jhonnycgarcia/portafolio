@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalcardComponent implements OnInit {
 
-  cardTitle = 'Resumen';
+  cardTitle = 'Acerca de mi';
   personalData = {
     name: 'Jhonny',
     lastName: 'García',
