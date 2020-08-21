@@ -29,23 +29,23 @@ const data = [
         title: 'SIGEI',
         coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706556/projectCGP400pxCompress_ilvehs.png',
         slug: '',
-        summary: 'Sistema Gestor de Inasistencias',
-        description: ''
+        summary: 'Sistema de Gestión Interna',
+        description: 'Es una herramienta interna de la SECGP para mejoras de los procesos'
     },
     {
         id: '4',
-        title: 'SIDEIN',
+        title: 'SICA',
         coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706556/projectCGP400pxCompress_ilvehs.png',
         slug: '',
-        summary: 'Sistema para Detección de Inconsistencias',
-        description: ''
+        summary: 'Sistema de Información para el Control y Auditoría',
+        description: 'Es una herramienta que permite la verificación y auditoría de los procesos de ascensos y pie de fuerza de las policías ostensivas.'
     },
     {
         id: '5',
-        title: 'Title 5',
-        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1596153386/coffeeCupPurpleCompress_wbndmq.png',
+        title: 'SIRCAS',
+        coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597706556/projectCGP400pxCompress_ilvehs.png',
         slug: '',
-        summary: 'Lorem ipsum',
+        summary: 'Sistema para el Registro y Control de la Asistencia',
         description: ''
     },
     {
