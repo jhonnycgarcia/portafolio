@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { GoupComponent } from './components/shared/goup/goup.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
+import { OldJobsComponent } from './components/old-jobs/old-jobs.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ProyectCardComponent } from './components/proyect-card/proyect-card.com
     ContactComponent,
     GoupComponent,
     ProyectsComponent,
-    ProyectCardComponent
+    ProyectCardComponent,
+    OldJobsComponent
   ],
   imports: [
     BrowserModule,
