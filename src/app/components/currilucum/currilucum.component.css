@@ -1,5 +1,9 @@
 #curriculum {
     background: #323232;
+    -webkit-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.41);
+    background-color: #323232;
 }
 
 p.info {
