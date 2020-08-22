@@ -13,11 +13,16 @@ p.info {
 }
 
 h4.curriculum-text-company>a {
+    display: inline-block;
     text-decoration: none;
     color: #c65039;
 }
 
-h4.curriculum-text-company:hover>a {
+h4.curriculum-text-company>a>i.fas {
+    font-size: 1rem;
+}
+
+h4.curriculum-text-company>a:hover {
     color: #d46f5b;
 }
 
