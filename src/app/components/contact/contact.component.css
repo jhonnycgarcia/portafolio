@@ -29,7 +29,9 @@ a.social-icons i {
     padding: 11px 11px;
 }
 
-a.social-icons i:hover {
+a.social-icons:hover>i,
+a.social-icons:focus>i,
+a.social-icons:active>i {
     color: #494848;
 }
 
