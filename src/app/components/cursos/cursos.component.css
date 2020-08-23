@@ -1,0 +1,26 @@
+h4>a {
+    display: inline-block;
+    text-decoration: none;
+    color: #343a40;
+}
+
+h4>a:hover {
+    text-decoration: none;
+    color: rgb(93, 103, 112);
+}
+
+h4>a>i.fas {
+    color: #c65039;
+    font-size: 1rem;
+}
+
+h5::before {
+    content: '|';
+    color: #c65039;
+    padding-right: 10px;
+}
+
+p.info {
+    padding: 0;
+    margin: 0;
+}
