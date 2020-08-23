@@ -15,6 +15,7 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
 import { OldJobsComponent } from './components/old-jobs/old-jobs.component';
 import { CurrilucumComponent } from './components/currilucum/currilucum.component';
+import { CursosComponent } from './components/cursos/cursos.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CurrilucumComponent } from './components/currilucum/currilucum.componen
     ProyectsComponent,
     ProyectCardComponent,
     OldJobsComponent,
-    CurrilucumComponent
+    CurrilucumComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
