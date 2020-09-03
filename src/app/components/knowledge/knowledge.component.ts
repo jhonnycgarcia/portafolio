@@ -25,13 +25,13 @@ export class KnowledgeComponent implements OnInit {
       title: 'Maquetación',
       fontAwesomeIcon: 'far fa-object-group',
       coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597464326/maquetacion1Compress_dcpqrn.jpg',
-      description: `Elaborar modelos y diagramas implementando el lenguaje unificado de modelado <i class="text-muted-1">(UML)</i> para para visualizar, especificar, construir y documentar sistemas.`
+      description: `Elaboración de modelos y diagramas implementando el lenguaje unificado de modelado <i class="text-muted-1">(UML)</i> para para visualizar, especificar, construir y documentar sistemas.`
       },
     {
       title: 'Gestión de Proyectos',
       fontAwesomeIcon: 'fas fa-book',
       coverImage: 'https://res.cloudinary.com/jhonnycgarcia/image/upload/v1597499428/proyectManagement6Compress_uec2tl.jpg',
-      description: `Documentar proyectos haciendo uso de las buenas prácticas para la gestión, administración y dirección de proyectos <i class="text-muted-1">(PMBOK)</i>.`
+      description: `Planificación, seguimiento y control a proyectos en sus múltiples etapas haciendo uso de las buenas prácticas para la gestión de proyectos <i class="text-muted-1">(PMBOK)</i>.`
     }
   ];
   constructor() { }
