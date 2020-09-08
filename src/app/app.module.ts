@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { ProyectCardComponent } from './components/proyect-card/proyect-card.com
 import { OldJobsComponent } from './components/old-jobs/old-jobs.component';
 import { CurrilucumComponent } from './components/currilucum/currilucum.component';
 import { CursosComponent } from './components/cursos/cursos.component';
+import { LearningComponent } from './components/learning/learning.component';
+import { TechnologiesComponent } from './components/technologies/technologies.component';
 
 
 @NgModule({
@@ -33,11 +36,14 @@ import { CursosComponent } from './components/cursos/cursos.component';
     ProyectCardComponent,
     OldJobsComponent,
     CurrilucumComponent,
-    CursosComponent
+    CursosComponent,
+    LearningComponent,
+    TechnologiesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

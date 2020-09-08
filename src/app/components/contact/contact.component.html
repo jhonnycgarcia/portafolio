@@ -6,27 +6,71 @@
             <div class="row align-items-center">
 
                 <div class="col-12 col-sm-12 col-md-6">
-                    <form action="" method="post" onsubmit="return false;">
+
+                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)" *ngIf="!confirmForm">
                         <div class="form-row">
                             <div class="form-group col">
+
                                 <label class="sr-only" for="nameInput">Nombre:</label>
-                                <input class="form-control" name="nameInput" type="text" placeholder="Nombre y Apellido">
+                                <input class="form-control" name="nameInput" type="text" placeholder="Nombre y Apellido" formControlName="nameInput" required [ngClass]="{'is-invalid': !nameField.valid && (nameField.dirty || nameField.touched)}" [readOnly]="preview">
+
+                                <!-- Errors -->
+                                <div class="invalid-tooltip" *ngIf="!nameField.valid && (nameField.dirty || nameField.touched)">
+                                    <small class="text-left" id="nameInputHelp" name="nameInputHelp" *ngIf="nameField.errors.required">El campo es requerido</small>
+                                    <small class="text-left" id="nameInputHelp" name="nameInputHelp" *ngIf="nameField.errors.minlength">Mínimo 6 caracteres</small>
+                                    <small class="text-left" id="nameInputHelp" name="nameInputHelp" *ngIf="nameField.errors.maxlength">Máximo 30 caracteres</small>
+                                </div>
+
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col">
                                 <label class="sr-only" for="emailInput">Email:</label>
-                                <input class="form-control" name="emailInput" type="text" placeholder="Email de contacto">
+                                <input class="form-control" name="emailInput" type="email" placeholder="Email de contacto" formControlName="emailInput" required [ngClass]="{'is-invalid': !emailField.valid && emailField.touched}" [readOnly]="preview">
+
+                                <!-- Errors -->
+                                <div class="invalid-tooltip" *ngIf="!emailField.valid && emailField.touched">
+                                    <small class="text-left" id="emailInputHelp" name="emailInputHelp" *ngIf="emailField.errors.required">El campo es requerido</small>
+                                    <small class="text-left" id="emailInputHelp" name="emailInputHelp" *ngIf="emailField.errors.email">Debe ingresar una dirección de correo válida</small>
+                                </div>
+
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col">
                                 <label class="sr-only" for="messageInput">Mensaje:</label>
-                                <textarea class="form-control" name="messageInput" id="messageInput" rows="6" maxlength="500" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control" name="messageInput" id="messageInput" rows="6" maxlength="250" placeholder="Mensaje" formControlName="messageInput" required [ngClass]="{'is-invalid': !messageField.valid && messageField.touched}" [readOnly]="preview"></textarea>
+
+                                <!-- Errors -->
+                                <div class="invalid-tooltip" *ngIf="!messageField.valid && messageField.touched">
+                                    <small class="text-left" id="messajeInputHelp" name="messajeInputHelp" *ngIf="messageField.errors.required">El campo es requerido</small>
+                                    <small class="text-left" id="messajenputHelp" name="messajenputHelp" *ngIf="messageField.errors.minlength">Mínimo 6 caracteres</small>
+                                    <small class="text-left" id="messajenputHelp" name="messajenputHelp" *ngIf="messageField.errors.maxlength">Máximo 500 caracteres</small>
+                                </div>
+
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-secondary col-12 col-sm-2 col-md-3 col-lg-2 float-right">Enviar</button>
+                        <button type="submit" class="btn btn-secondary col-12 col-sm-2 col-md-3 col-lg-2 float-right" *ngIf="!preview">Enviar</button>
                     </form>
+
+                    <!-- confirm -->
+                    <div *ngIf="preview && !confirmForm">
+                        <p>¡Genial! por último, ¿Ingresaste todos los datos correctamente?</p>
+                        <button class="btn btn-secondary mx-1" type="button" (click)="confirmSubmit(true)">Si</button>
+                        <button class="btn btn-secondary mx-1" type="button" (click)="confirmSubmit()">No</button>
+                    </div>
+
+                    <!-- spinner -->
+                    <div *ngIf="showSpinner" class="text-center">
+                        <div class="fa-3x"><i class="fas fa-sync fa-spin"></i></div>
+                        <p class="p-2">Enviando...</p>
+                    </div>
+
+                    <!-- Response -->
+                    <div *ngIf="showResponse">
+                        <h4>{{formResponse}}</h4>
+                    </div>
+
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-6 mt-5 mt-md-0">
