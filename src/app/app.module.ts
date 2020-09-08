@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,9 +17,10 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
 import { OldJobsComponent } from './components/old-jobs/old-jobs.component';
 import { CurrilucumComponent } from './components/currilucum/currilucum.component';
-import { CursosComponent } from './components/cursos/cursos.component';
-import { LearningComponent } from './components/learning/learning.component';
-import { TechnologiesComponent } from './components/technologies/technologies.component';
+// import { CursosComponent } from './components/cursos/cursos.component';
+// import { LearningComponent } from './components/learning/learning.component';
+// import { TechnologiesComponent } from './components/technologies/technologies.component';
+
 
 
 @NgModule({
@@ -36,14 +38,15 @@ import { TechnologiesComponent } from './components/technologies/technologies.co
     ProyectCardComponent,
     OldJobsComponent,
     CurrilucumComponent,
-    CursosComponent,
-    LearningComponent,
-    TechnologiesComponent
+    // CursosComponent,
+    // LearningComponent,
+    // TechnologiesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
