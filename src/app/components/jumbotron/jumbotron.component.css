@@ -65,7 +65,6 @@ a.btn:focus {
 .do-scroll-down {
     color: #fff;
     font-size: 2rem;
-    overflow: hidden;
 }
 
 .do-scroll-down>i.chevron-1 {
@@ -73,37 +72,38 @@ a.btn:focus {
 }
 
 #startSection[data-scroll="in"] i.chevron-1 {
+    text-shadow: 0px -17px #fff, 0px 17px #fff;
     animation-name: slideInDown;
-    animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    animation-duration: 1.5s;
     animation-delay: 1.5s;
 }
 
-@-webkit-keyframes slideInDown {
-    from {
+@keyframes slideInDown {
+    0% {
         opacity: 0;
-        -webkit-transform: translate3d(0, -50%, 0);
-        transform: translate3d(0, -50%, 0);
-        visibility: visible;
+        text-shadow: 0px -17px rgba(255, 255, 255, 1), 0px 17px rgba(255, 255, 255, 0);
     }
-    to {
+    50% {
         opacity: 1;
-        -webkit-transform: translate3d(0, 110% 0);
-        transform: translate3d(0, 110% 0);
+    }
+    100% {
+        opacity: 0;
+        text-shadow: 0px -17px rgba(255, 255, 255, 0), 0px 17px rgba(255, 255, 255, 1);
     }
 }
 
-@keyframes slideInDown {
-    from {
+@-webkit-keyframes slideInDown {
+    0% {
         opacity: 0;
-        -webkit-transform: translate3d(0, -50%, 0);
-        transform: translate3d(0, -50%, 0);
-        visibility: visible;
+        text-shadow: 0px -17px rgba(255, 255, 255, 1), 0px 17px rgba(255, 255, 255, 0);
     }
-    to {
+    50% {
         opacity: 1;
-        -webkit-transform: translate3d(0, 110% 0);
-        transform: translate3d(0, 110%, 0);
+    }
+    100% {
+        opacity: 0;
+        text-shadow: 0px -17px rgba(255, 255, 255, 0), 0px 17px rgba(255, 255, 255, 1);
     }
 }
 
